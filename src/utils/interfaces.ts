@@ -1,3 +1,3 @@
-export interface ITitle {
+export interface IText {
   text: string
 }

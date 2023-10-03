@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { poppins } from './fonts'
+import { openSans } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Huddle',
@@ -18,7 +18,7 @@ export default function RootLayout({
         <link rel="icon" href="./favicon-32x32.png" />
       </head>
       <body
-        className={`${poppins.className} flex w-[100vw] flex-col items-center`}
+        className={`${openSans.className} flex w-full flex-col items-center`}
       >
         {children}
       </body>
