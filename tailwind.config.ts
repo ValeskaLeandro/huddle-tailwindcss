@@ -13,8 +13,8 @@ const config: Config = {
         lightPink: 'hsl(321, 100%, 78%)',
         lightRed: 'hsl(0, 100%, 63%)',
         darkCyan: 'hsl(192, 100%, 9%)',
-        paleBlue: 'hsl(207, 100%, 98%)'
-      }
+        paleBlue: 'hsl(207, 100%, 98%)',
+      },
     },
   },
   plugins: [],

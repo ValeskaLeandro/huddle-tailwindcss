@@ -17,7 +17,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./favicon-32x32.png" />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body
+        className={`${poppins.className} flex w-[100vw] flex-col items-center`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
