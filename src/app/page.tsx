@@ -23,7 +23,7 @@ export default function Home() {
           <Description
             text="Huddle re-imagines the way we build communities. You have a voice, but so does 
   your audience. Create connections with your users as you engage in genuine discussion. "
-            classname="text-center lg:max-w-[40%]"
+            classname="text-center lg:max-w-[40%] md:max-w-[60%]"
           />
           <Button text="Get Started For Free" />
         </section>
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="section1-bg1-top w-full"></div>
+        <div className="section1-top w-full"></div>
         <section className="flex w-full justify-center bg-paleBlue py-14">
           <div className="flex w-[80%] max-w-[1440px] flex-col-reverse items-center md:flex-row">
             <div>
@@ -80,7 +80,7 @@ export default function Home() {
               <Description
                 text="Generate meaningful discussions with your audience and build a strong, loyal community. 
   Think of the insightful conversations you miss out on with a feedback form."
-                classname="text-center md:text-left"
+                classname="text-center md:text-left md:max-w-[60%]"
               />
             </div>
             <div className="mb-16 w-full md:max-w-[40%]">
@@ -93,7 +93,30 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="section1-bg2-bottom w-full"></div>
+        <div className="section1-bottom w-full"></div>
+        <section className="flex w-full justify-center py-14">
+          <div className="flex w-[80%] max-w-[1440px] flex-col items-center justify-between md:flex-row">
+            <div className="mb-16 w-full md:max-w-[40%]">
+              <Image
+                src="./illustration/illustration-flowing-conversation.svg"
+                alt="Homem e mulher de negócios"
+                width={1023}
+                height={837}
+              />
+            </div>
+            <div className="flex w-full flex-col md:max-w-[40%] ">
+              <Title
+                text="Flowing Conversations"
+                classname="text-center md:text-left"
+              />
+              <Description
+                text="You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+                just-in-time loading for a more natural flow."
+                classname="text-center md:text-left "
+              />
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
