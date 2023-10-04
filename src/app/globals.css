@@ -5,34 +5,65 @@
 body {
   width: 100vw;
 }
+
 .section1-top {
-  min-height: 230px;
-  background: url("/bgs/bg-section-top-mobile-2.svg") no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  background: url("/bgs/bg-section-top-mobile-1.svg") no-repeat bottom;
 
   @media (min-width: 768px) {
-    background: url("/bgs/bg-section-top-desktop-1.svg") no-repeat;
-    background-size: 100%;
-    background-position: bottom;
+    background: url("/bgs/bg-section-top-desktop-1.svg") no-repeat bottom;
   }
+}
+
+.section1-bottom {
+  background: url("/bgs/bg-section-bottom-mobile-1.svg") no-repeat top;   
+
+  @media (min-width: 768px) {
+    background: url("/bgs/bg-section-bottom-desktop-1.svg") no-repeat top;     
+  }
+}
+
+.section2-top {
+  background: url("/bgs/bg-section-top-mobile-2.svg") no-repeat bottom;   
+
+  @media (min-width: 768px) {
+    background: url("/bgs/bg-section-top-desktop-2.svg") no-repeat bottom;     
+  }
+}
+
+.section2-bottom {
+  background: url("/bgs/bg-section-bottom-mobile-2.svg") no-repeat top;
+
+  @media (min-width: 768px) {
+    background: url("/bgs/bg-section-bottom-desktop-2.svg") no-repeat top;     
+  }
+}
+
+.footer-top {
+  background: url("/bgs/bg-footer-top-mobile.svg") no-repeat bottom;
+  @media (min-width: 768px) {
+    background: url("/bgs/bg-footer-top-desktop.svg") no-repeat bottom bottom;
+  }
+}
+
+.section {
+  height: 200px;
+  background-size: 100%;
 
   @media (min-width: 1970px) {
     min-height: 300px;
   }
-
 }
 
-.section1-bottom {
-  min-height: 200px;
-  background: url("/bgs/bg-section-bottom-mobile-1.svg") no-repeat;
-  background-size: 100%;
-  background-position: top;
+::-webkit-scrollbar {
+  width: 10px; 
+  
+}
 
-  @media (min-width: 768px) {
-    background: url("/bgs/bg-section-bottom-desktop-1.svg") no-repeat;
-    background-size: 100%;
-    background-position: top;
-  }
+::-webkit-scrollbar-thumb {
+  background: hsl(322, 100%, 66%);  
+  border-radius: 5px;
+}
 
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(321, 100%, 78%);
 }

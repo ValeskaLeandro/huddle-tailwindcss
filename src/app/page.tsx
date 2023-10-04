@@ -1,7 +1,10 @@
 import Button from '@/components/Button'
+import CardStatistic from '@/components/CardStatistic'
 import Description from '@/components/Description'
 import Title from '@/components/Title'
 import Image from 'next/image'
+import { FaTwitterSquare, FaInstagram } from 'react-icons/fa'
+import { FaSquareFacebook } from 'react-icons/fa6'
 
 export default function Home() {
   return (
@@ -37,39 +40,19 @@ export default function Home() {
             />
           </div>
           <div className="flex w-full max-w-[1035px] flex-col items-center p-5 md:flex-row md:justify-between">
-            <div className="mb-5 max-w-[300px] py-12 md:py-0">
-              <Image
-                src="./icons/icon-communities.svg"
-                alt="Screen Mockups"
-                width={32}
-                height={28}
-                className="mb-2"
-              />
-              <div className="flex flex-col items-center">
-                <h2 className="mb-4 text-6xl font-black text-darkCyan lg:text-8xl">
-                  1.4k+
-                </h2>
-                <p className="text-center text-gray-500">Communities Formed</p>
-              </div>
-            </div>
-            <div className="max-w-[300px]">
-              <Image
-                src="./icons/icon-messages.svg"
-                alt="Screen Mockups"
-                width={32}
-                height={28}
-                className="mb-2 "
-              />
-              <div className="flex flex-col items-center">
-                <h2 className="mb-4 text-6xl font-black text-darkCyan lg:text-8xl">
-                  2.7m+
-                </h2>
-                <p className="text-center text-gray-500">Messages Sent</p>
-              </div>
-            </div>
+            <CardStatistic
+              iconSrc="./icons/icon-communities.svg"
+              number="1.4k+"
+              description="Communities Formed"
+            />
+            <CardStatistic
+              iconSrc="./icons/icon-messages.svg"
+              number="2.7m+"
+              description="Messages Sent"
+            />
           </div>
         </section>
-        <div className="section1-top w-full"></div>
+        <div className="section section1-top w-full"></div>
         <section className="flex w-full justify-center bg-paleBlue py-14">
           <div className="flex w-[80%] max-w-[1440px] flex-col-reverse items-center md:flex-row">
             <div>
@@ -93,8 +76,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="section1-bottom w-full"></div>
-        <section className="flex w-full justify-center py-14">
+        <div className="section section1-bottom w-full"></div>
+        <section className="flex w-full justify-center py-2">
           <div className="flex w-[80%] max-w-[1440px] flex-col items-center justify-between md:flex-row">
             <div className="mb-16 w-full md:max-w-[40%]">
               <Image
@@ -117,7 +100,111 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="section section2-top w-full"></div>
+        <section className="flex w-full justify-center bg-paleBlue py-8">
+          <div className="flex w-[80%] max-w-[1440px] flex-col-reverse items-center md:flex-row">
+            <div>
+              <Title text="Your Users" classname="text-center md:text-left" />
+              <Description
+                text="It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+                once signed in to your app, your users can start chatting immediately."
+                classname="text-center md:text-left md:max-w-[70%]"
+              />
+            </div>
+            <div className="mb-16 w-full md:max-w-[40%]">
+              <Image
+                src="./illustration/illustration-your-users.svg"
+                alt="Homem e mulher de negócios"
+                width={1023}
+                height={837}
+              />
+            </div>
+          </div>
+        </section>
+        <div className="section section2-bottom w-full"></div>
+        <section className="flex w-full items-center justify-center py-2 md:min-h-[40vh]">
+          <div className="flex w-[80%] max-w-[1440px] flex-col items-center pb-16 md:pt-16">
+            <Title
+              text=" Ready To Build Your Community?"
+              classname="text-center md:text-left"
+            />
+            <Button text="Get Started For Free" />
+          </div>
+        </section>
       </main>
+      <div className="section footer-top w-full"></div>
+      <footer className=" flex w-full justify-center bg-darkCyan py-10 text-paleBlue ">
+        <div className="flex w-[80%] flex-col justify-between md:flex-row-reverse">
+          <div className="mb-16 md:mb-0 md:max-w-[40%]">
+            <h3 className="mb-5 font-bold uppercase">Newsletter</h3>
+            <p className="mb-5 max-w-[330px] text-sm md:mb-10">
+              To recieve tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address
+            </p>
+            <div className="flex flex-col items-end md:gap-7 lg:flex-row lg:items-center ">
+              <input
+                type="email"
+                className="mb-4 flex w-full rounded-md p-3 text-darkCyan md:m-0 md:min-w-[250px]"
+              />
+              <button className="w-[160px] rounded-md bg-pink px-8 py-3 font-bold transition duration-500 hover:bg-lightPink">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div className="mb-8 md:mb-0 md:max-w-[50%]">
+            <div className="mb-5 w-[100%] max-w-[60%]">
+              <Image
+                src="./logo-white.svg"
+                alt="Logo Huddle"
+                width={240}
+                height={39}
+              />
+            </div>
+            <p className="mb-10 text-sm md:max-w-[330px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mauris
+              nulla quam, hendrerit çlacinia vestbulum a, eltrices quis sem.
+            </p>
+
+            <div>
+              <p className="mb-5 flex items-center gap-5 text-sm">
+                <span>
+                  <Image
+                    src="./icons/icon-phone.svg"
+                    alt="Icon Phone"
+                    width={18}
+                    height={18}
+                  />
+                </span>
+                Phone: +1-543-123-4567
+              </p>
+              <p className="mb-10 flex items-center gap-5 text-sm">
+                <span>
+                  <Image
+                    src="./icons/icon-email.svg"
+                    alt="Icon Email"
+                    width={18}
+                    height={18}
+                  />
+                </span>
+                example@huddle.com
+              </p>
+
+              <div className="flex gap-4">
+                <a href="#">
+                  <FaSquareFacebook size={24} />
+                </a>
+                <a href="#">
+                  <FaInstagram size={24} />
+                </a>
+                <a href="#">
+                  <FaTwitterSquare size={24} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
