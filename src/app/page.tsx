@@ -14,16 +14,20 @@ export default function Home() {
           Try it free
         </button>
       </header>
-      <main className="flex w-[80%] flex-col items-center">
-        <section className="flex min-h-[60vh] w-full flex-col items-center justify-center">
-          <Title text="Build The Community Your Fans Will Love" />
+      <main className="flex w-full flex-col items-center">
+        <section className="flex min-h-[60vh] w-[80%] max-w-[1440px] flex-col items-center justify-center">
+          <Title
+            text="Build The Community Your Fans Will Love"
+            classname="text-center"
+          />
           <Description
             text="Huddle re-imagines the way we build communities. You have a voice, but so does 
   your audience. Create connections with your users as you engage in genuine discussion. "
+            classname="text-center lg:max-w-[40%]"
           />
           <Button text="Get Started For Free" />
         </section>
-        <section className="flex w-full flex-col items-center justify-center gap-16">
+        <section className="mb-4 flex w-[80%] max-w-[1440px] flex-col items-center justify-center gap-16 ">
           <div>
             <Image
               src="./screen-mockups.svg"
@@ -65,6 +69,31 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="section1-bg1-top w-full"></div>
+        <section className="flex w-full justify-center bg-paleBlue py-14">
+          <div className="flex w-[80%] max-w-[1440px] flex-col-reverse items-center md:flex-row">
+            <div>
+              <Title
+                text="Grow Together"
+                classname="text-center md:text-left"
+              />
+              <Description
+                text="Generate meaningful discussions with your audience and build a strong, loyal community. 
+  Think of the insightful conversations you miss out on with a feedback form."
+                classname="text-center md:text-left"
+              />
+            </div>
+            <div className="mb-16 w-full md:max-w-[40%]">
+              <Image
+                src="./illustration/illustration-grow-together.svg"
+                alt="Homem e mulher de negócios"
+                width={1023}
+                height={837}
+              />
+            </div>
+          </div>
+        </section>
+        <div className="section1-bg2-bottom w-full"></div>
       </main>
     </>
   )

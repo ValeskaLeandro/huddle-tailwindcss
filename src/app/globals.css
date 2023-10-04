@@ -5,3 +5,34 @@
 body {
   width: 100vw;
 }
+.section1-bg1-top {
+  min-height: 230px;
+  background: url("/bgs/bg-section-top-mobile-2.svg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+
+  @media (min-width: 768px) {
+    background: url("/bgs/bg-section-top-desktop-1.svg") no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+
+  @media (min-width: 1970px) {
+    min-height: 300px;
+  }
+
+}
+
+.section1-bg2-bottom {
+  min-height: 200px;
+  background: url("/bgs/bg-section-bottom-mobile-1.svg") no-repeat;
+  background-size: 100%;
+  background-position: top;
+
+  @media (min-width: 768px) {
+    background: url("/bgs/bg-section-bottom-desktop-1.svg") no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+
+}
